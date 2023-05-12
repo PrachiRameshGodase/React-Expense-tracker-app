@@ -34,17 +34,8 @@ function App() {
   return (
   <>
     <div>
-    {/* <ExpenseItem title={expenses[0].title} amount={expenses[0].amount} date={expenses[0].date} location={expenses[0].location} />
-    <ExpenseItem title={expenses[1].title} amount={expenses[1].amount} date={expenses[1].date} location={expenses[1].location}/>
-    <ExpenseItem title={expenses[2].title} amount={expenses[2].amount} date={expenses[2].date} location={expenses[2].location}/>
-    <ExpenseItem title={expenses[3].title} amount={expenses[3].amount} date={expenses[3].date} location={expenses[3].location}/> */}
-    {/* {
-    for(let i=0; i<expenses.length; i++){
-      let expense=expenses[i];
-      <ExpenseItem title={expense[i].title} amount={expense[i].amount} date={expense[i].date} location={expense[i].location} />
-    }} */}
     {expenses.map((expense)=>(
-      <ExpenseItem key={expense.id} title={expense.title} amount={expense.amount} date={expense.date} location={expense.location} />
+    <ExpenseItem key={expense.id} title={expense.title} amount={expense.amount} date={expense.date} location={expense.location} />
 ))}
     </div>
     </>
