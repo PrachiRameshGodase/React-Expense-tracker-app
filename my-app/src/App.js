@@ -1,4 +1,5 @@
 
+import React from 'react'
 import './App.css';
 import Expenses from './components/Expenses';
 
@@ -31,24 +32,13 @@ function App() {
       date: new Date(2021, 5, 12),
       location: "Carpenter",
   }]
+
+  // return React.createElement("div",{},React.createElement("h2",{},"Let's get started!"),React.createElement(Expenses,{items:expenses}))
   return (
-  <>
-    {/* <div className='expenses'>
-    {expenses.map((expense)=>(
-    <ExpenseItem key={expense.id} 
-    title={expense.title} 
-    amount={expense.amount} 
-    date={expense.date} 
-    location={expense.location} />
-))}
-    </div> */}
     <div>
+      <h2>Let's get started!</h2>
       <Expenses items={expenses}/>
     </div>
-    </>
-  
-    
-    
   );
 }
 
