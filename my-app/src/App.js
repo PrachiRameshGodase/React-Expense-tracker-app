@@ -1,9 +1,9 @@
 
 import React from 'react'
 import './App.css';
-import Expenses from './components/Expenses';
+import Expenses from './components/Expenses/Expenses';
 
-function App() {
+const App=()=> {
   const expenses=[{
     id:"e1",
     title:"Toilet Paper",
@@ -33,7 +33,8 @@ function App() {
       location: "Carpenter",
   }]
 
-  // return React.createElement("div",{},React.createElement("h2",{},"Let's get started!"),React.createElement(Expenses,{items:expenses}))
+  // return React.createElement("div",{},
+  // React.createElement("h2",{},"Let's get started!"),React.createElement(Expenses,{items:expenses}))
   return (
     <div>
       <h2>Let's get started!</h2>
